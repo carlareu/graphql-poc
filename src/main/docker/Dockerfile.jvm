@@ -1,5 +1,5 @@
 ####
-# This Dockerfile is used in order to build a container that runs the Quarkus application in JVM mode
+# This Dockerfile is used in order to build a container that runs the Quarkus applicant in JVM mode
 #
 # Before building the container image run:
 #
@@ -22,8 +22,8 @@
 #
 # docker run -i --rm -p 8080:8080 quarkus/microprofile-graphql-quickstart-jvm
 #
-# This image uses the `run-java.sh` script to run the application.
-# This scripts computes the command line to execute your Java application, and
+# This image uses the `run-java.sh` script to run the applicant.
+# This scripts computes the command line to execute your Java applicant, and
 # includes memory/GC tuning.
 # You can configure the behavior using the following environment properties:
 # - JAVA_OPTS: JVM options passed to the `java` command (example: "-verbose:class")
@@ -82,7 +82,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-17:1.16
 ENV LANGUAGE='en_US:en'
 
 
-# We make four distinct layers so if there are application changes the library layers can be re-used
+# We make four distinct layers so if there are applicant changes the library layers can be re-used
 COPY --chown=185 build/quarkus-app/lib/ /deployments/lib/
 COPY --chown=185 build/quarkus-app/*.jar /deployments/
 COPY --chown=185 build/quarkus-app/app/ /deployments/app/

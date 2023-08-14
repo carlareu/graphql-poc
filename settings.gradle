@@ -8,4 +8,4 @@ pluginManagement {
         id "${quarkusPluginId}" version "${quarkusPluginVersion}"
     }
 }
-rootProject.name='microprofile-graphql-quickstart'
+rootProject.name='graphql-poc'
